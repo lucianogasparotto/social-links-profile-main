@@ -1,0 +1,123 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsla(0, 0%, 20%, 0.489);
+    --dark-grey: hsl(0, 0%, 12%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--Off-black);
+}
+
+.principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 690px;
+    background-color: var(--grey);
+    color: var(--white);
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+.img {
+    border-radius: 50%;
+    margin-top: 30px;
+    padding: 15px 0;
+    width: 130px;
+}
+
+h1 {
+    padding-bottom: 6px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 600;
+    color: var(--green);
+    padding-bottom: 30px;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+.social-midia {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    width: 330px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.social-midia a {
+    display: block;
+    background-color: #cccccc18;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    color: var(--white);
+    font-size: 14px;
+    gap: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer a:active {
+    color: var(--green);
+}
+
+@media only screen and (max-width: 442px) {
+    .principal{
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0;
+        color: var(--white);
+        font-size: 10px;
+        gap: 10px;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    footer a:active {
+        color: var(--green);
+    }
+}
