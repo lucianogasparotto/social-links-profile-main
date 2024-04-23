@@ -85,7 +85,7 @@ footer {
     width: 100%;
     padding: 20px 0;
     color: var(--white);
-    font-size: 14px;
+    font-size: 10px;
     gap: 10px;
 }
 
@@ -108,7 +108,7 @@ footer a:active {
         width: 100%;
         padding: 20px 0;
         color: var(--white);
-        font-size: 10px;
+        font-size: 8px;
         gap: 10px;
     }
     
@@ -119,5 +119,11 @@ footer a:active {
     
     footer a:active {
         color: var(--green);
+    }
+}
+
+@media only screen and (max-width: 327px) {
+    .social-midia {
+        width: 100%;
     }
 }
